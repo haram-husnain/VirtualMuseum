@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>The Rizal Archive</title>
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--Preloading translations-->
+        <link rel="preload" href="data/eng.json" as="fetch">
+        <link rel="preload" href="data/fil.json" as="fetch">
+
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Martian+Mono:wght@100..800&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <header class="hero">
+            <div class="hero-content">
+                <h1 data-translate="home.title">Museo de Rizal: An Archive of a Hero</h1>
+                <p data-translate="home.subtitle">A journey through the life of the Philippines' national hero</p>
+            </div>
+        </header>
+
+        <div id="navbar-placeholder"></div>
+        <script>
+            $(document).ready(function() {
+                $('#navbar-placeholder').load('components\navbar.html');
+            });
+        </script>
+        
+      
+        <!-- scripts -->
+        <script src="js/main.js"></script>
+        <script src="js/modal.js"></script>
+        
+        
+    </body>
+</html>

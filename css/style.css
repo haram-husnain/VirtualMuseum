@@ -1,0 +1,38 @@
+/*Main Styling*/
+
+
+
+/*FONTS*/
+
+.martian-mono-heading-font-500 {
+  font-family: "Martian Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.martian-mono-heading-font-800 {
+  font-family: "Martian Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 112.5;
+}
+
+
+.sora-paragraph-font-400> {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sora-paragraph-font-600> {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
