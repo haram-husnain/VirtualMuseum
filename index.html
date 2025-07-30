@@ -1,45 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rizal Archive</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Martian+Mono:wght@100..800&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+    <header class="header">
+        <div class="header-title">
+            <h5>The Rizal Archive</h5>
+        </div>
+        <nav class="header-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="pages/early-life.html" class="nav-link">Early Life</a>
+            <a href="pages/travels.html" class="nav-link">Travels</a>
+            <a href="pages/works.html" class="nav-link">Works</a>
+            <a href="pages/exile-trial.html" class="nav-link">Martyrdom</a>
+            <a href="pages/legacy.html" class="nav-link">Legacy</a>
+        </nav>
+    </header>
 
-        <title>The Rizal Archive</title>
-        <link rel="stylesheet" href="css/style.css">
+    <main class="main-content">
+        <section class="introduction">
+            <h1 class="martian-mono-800">Welcome to <br>the Rizal<br> Archive</h1>
+            <h3 class="sora-500">
+                <span class="line-background">This archive is dedicated to the life and </span><br>
+                <span class="line-background">works of Dr. José Rizal, a national hero of</span><br> 
+                <span class="line-background">the Philippines.</span></h3>
+        </section>
 
-        <!--Preloading translations-->
-        <link rel="preload" href="data/eng.json" as="fetch">
-        <link rel="preload" href="data/fil.json" as="fetch">
-
-        <!--fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Martian+Mono:wght@100..800&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-
-    </head>
-
-    <body>
-
-        <header class="hero">
-            <div class="hero-content">
-                <h1 data-translate="home.title">Museo de Rizal: An Archive of a Hero</h1>
-                <p data-translate="home.subtitle">A journey through the life of the Philippines' national hero</p>
+        <section class="quote-section">
+            <div class="quote-overlay"></div>
+            <div class="quote-content">
+                <blockquote class="rizal-quote">
+                    "He who does not love his own language is worse than an animal and smelly fish."
+                </blockquote>
+                <p class="quote-context">
+                    From Rizal's essay "The Indolence of the Filipino" (1890), reminding us that national identity begins with embracing our own culture.
+                </p>
+                <div class="quote-decoration">✻</div>
             </div>
-        </header>
+        </section>
 
-        <div id="navbar-placeholder"></div>
-        <script>
-            $(document).ready(function() {
-                $('#navbar-placeholder').load('components\navbar.html');
-            });
-        </script>
-        
-      
-        <!-- scripts -->
-        <script src="js/main.js"></script>
-        <script src="js/modal.js"></script>
-        
-        
-    </body>
+        <section class="gallery-section">
+        <h2 class="section-title">Rizal's Journey</h2>
+        <div class="slider-container">
+            <div class="slider-track" id="sliderTrack">
+                <!-- Cards will be inserted here by JavaScript -->
+            </div>
+            <div class="slider-nav">
+                <button id="prevBtn"><span class="material-icons">chevron_left</span></button>
+                <button id="nextBtn"><span class="material-icons">chevron_right</span></button>
+            </div>
+        </div>
+    </section>
+
+
+    </main>
+
+    
+    <!-- scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
 </html>
