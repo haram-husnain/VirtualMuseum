@@ -130,7 +130,6 @@ body {
 }
 
 .introduction {
-    background-image: url('/assets/portraits/portrait2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
